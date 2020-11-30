@@ -45,7 +45,7 @@ def telegram_bot_sendImageRemoteFile(img_url,caption):
 def get_my_posts(last_send_post_id):
     newest=True
     for post in get_posts(PAGE_NAME, pages=2):       
-        print(post['post_id'] +' ' + post['text'] + " image: " + post['image'])
+        print(post['post_id'] +' ' + str(post['text']) + " image: " + str(post['image']))
         if post['post_id']==last_send_post_id:
             print("already sent post...")
             break
