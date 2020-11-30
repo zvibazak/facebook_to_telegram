@@ -10,7 +10,7 @@ except ImportError:
     bot_chatID = ''
 
 #change to your page
-PAGE_NAME = 'HanochDaum'
+PAGE_NAME = 'GitHub'
 
 #Handle not sending posts again...
 last_send_post_id_file = 'last_send_post_id'
