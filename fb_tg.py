@@ -20,9 +20,12 @@ def set_last_send_post_id(post_id):
         f.write(post_id)
     
 def get_last_send_post_id():
-    with open(last_send_post_id_file, "r") as f: 
-        last_send_post_id = f.readline()   
-    return last_send_post_id
+    try:
+    	with open(last_send_post_id_file, "r") as f: 
+            last_send_post_id = f.readline()   
+    	return last_send_post_id
+    except:
+        return 0
 
 #Telegram APIs
 def telegram_bot_sendtext(bot_message):
