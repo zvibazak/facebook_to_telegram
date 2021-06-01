@@ -2,7 +2,7 @@
 A python script to read a post from Facebook and send it with a Telegram bot
 
 ## Usage
-Add your bot's token and chat ID:
+Add your bot's token and chat ID (to `tg_tokens.py` file):
 ```
 bot_token = ''
 bot_chatID = ''
